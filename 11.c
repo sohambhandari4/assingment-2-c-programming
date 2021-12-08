@@ -1,26 +1,24 @@
-#include <iostream>
+/**
+ * C program to print sum of all even numbers between 1 to n
+ */
 
-using namespace std;
+#include <stdio.h>
 
-int main() {
+int main()
+{
+    int i, n, sum=0;
 
-    int i, n, sum = 0;
+    /* Input upper limit from user */
+    printf("Enter upper limit: ");
+    scanf("%d", &n);
 
-    // Take input from user.
-    cout << "Print sum of even numbers till : ";
-    cin >> n;
-
-    for(i = 1; i <= n; i++) {
-
-        // Check for even or not.
-        if((i % 2) == 0) {
-
-            sum += i;
-
-        }
+    for(i=2; i<=n; i+=2)
+    {
+        /* Add current even number to sum */
+        sum += i;
     }
 
-    cout << endl << "Sum of even numbers from 1 to " << n << " is : " << sum;
+    printf("Sum of all even number between 1 to %d = %d", n, sum);
 
     return 0;
 }
