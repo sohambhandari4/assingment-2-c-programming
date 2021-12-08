@@ -1,19 +1,14 @@
+//ASCII values
+
 #include <stdio.h>
-int main() {
-    int n, i;
-    unsigned long long fact = 1;
-    printf("Enter an integer: ");
-    scanf("%d", &n);
-
-    // shows error if the user enters a negative integer
-    if (n < 0)
-        printf("Error! Factorial of a negative number doesn't exist.");
-    else {
-        for (i = 1; i <= n; ++i) {
-            fact *= i;
-        }
-        printf("Factorial of %d = %llu", n, fact);
-    }
-
+int main() {  
+    char c;
+    printf("Enter a character: ");
+    scanf("%c", &c);  
+    
+    // %d displays the integer value of a character
+    // %c displays the actual character
+    printf("ASCII value of %c = %d", c, c);
+    
     return 0;
 }
