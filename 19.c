@@ -1,3 +1,5 @@
+to check whether the enter number is palindrome or not. 
+
 #include <stdio.h>
 int main() {
   int n, reversed = 0, remainder, original;
