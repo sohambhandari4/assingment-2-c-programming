@@ -1,6 +1,6 @@
-/**
- * C program to check leap year using conditional operator
- */
+
+ // C program to check leap year using conditional operator
+ 
 
 #include <stdio.h>
 
