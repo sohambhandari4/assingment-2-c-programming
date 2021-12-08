@@ -1,3 +1,5 @@
+// factorial, odd even, exit
+
 #include<stdio.h>
 #include<conio.h>
 int main()
@@ -30,18 +32,6 @@ int main()
                     num = num-1;
                 }
                 printf("\nFactorial of %d is %d. \n\n",n, res);
-                break;
-
-                //for number "1" it's neither prime nor composite
-                if(num==1)
-                    printf("\n1 is neither prime nor composite");
-                else
-                {
-                        if(flag==0)
-                            printf("\n%d is Prime Number.\n\n", n);
-                        else
-                            printf("\n%d is not a Prime Number.\n\n", n);
-                }
                 break;
 
             //For Odd-even block
