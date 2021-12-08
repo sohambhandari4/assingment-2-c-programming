@@ -1,3 +1,5 @@
+// vowel or consonant
+
 #include <stdio.h>
 int main() {
     char c;
