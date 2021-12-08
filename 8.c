@@ -1,16 +1,13 @@
 // C++ Program to swap two numbers  without
 // using temporary variable
-#include <bits/stdc++.h>
-using namespace std;
- 
-int main()
-{
-    int x = 10, y = 5;
- 
-    // Code to swap 'x' and 'y'
-    x = x + y; // x now becomes 15
-    y = x - y; // y becomes 10
-    x = x - y; // x becomes 5
-    cout << "After Swapping: x =" << x << ", y=" << y;
-}
- 
+
+#include<stdio.h>  
+ int main()    
+{    
+int a=10, b=20;      
+printf("Before swap a=%d b=%d",a,b);      
+a=a+b;//a=30 (10+20)    
+b=a-b;//b=10 (30-20)    
+a=a-b;//a=20 (30-10)    
+printf("\nAfter swap a=%d b=%d",a,b);    
+return 0;  
