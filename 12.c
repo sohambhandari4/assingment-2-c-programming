@@ -1,3 +1,5 @@
+//ASCII value of any given charact
+
 #include <stdio.h>  
 int main()  
 {  
