@@ -1,16 +1,12 @@
-#include <stdio.h>
+// multiplication table
 
+#include <stdio.h>
 int main() {
-    int num, i = 1;
-    printf("
-    Enter any Number:");
-    scanf("%d", &num);
-    printf("Multiplication table of %d: ", num);
-    
-    while (i <= 10) {
-        printf("
-        %d x %d = %d", num, i, num * i);
-        i++;
-    }
-    return 0;
+  int n, i;
+  printf("Enter an integer: ");
+  scanf("%d", &n);
+  for (i = 1; i <= 10; ++i) {
+    printf("%d * %d = %d \n", n, i, n * i);
+  }
+  return 0;
 }
