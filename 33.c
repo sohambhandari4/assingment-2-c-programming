@@ -1,19 +1,15 @@
+// program to print the dot pattern
+
 #include <stdio.h>
-#include <string.h>
- 
-int main()
-{
-  char str[25];
-  int i;
-  printf("Enter the string: ");
-  scanf("%s", str);
- 
-  for (i = 0; i <= strlen(str); i++)
-  {
-    if (str[i] >= 65 && str[i] <= 90)
-      str[i] = str[i] + 32;
-  }
- 
-  printf("Conversion to Lower Case String: %s", str);
-  return 0;
+int main() {
+   int i, j, rows;
+   printf("Enter the number of rows: ");
+   scanf("%d", &rows);
+   for (i = rows; i >= 1; --i) {
+      for (j = 1; j <= i; ++j) {
+         printf("* ");
+      }
+      printf("\n");
+   }
+   return 0;
 }
