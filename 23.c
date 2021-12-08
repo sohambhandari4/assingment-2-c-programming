@@ -1,3 +1,5 @@
+// perfect number or not
+
 #include<stdio.h>
 int main(){
    int number,i,result=0;//declare variables and initialize result to 0
