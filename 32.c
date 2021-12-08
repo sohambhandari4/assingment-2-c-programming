@@ -1,17 +1,19 @@
-#include<stdio.h>
-#include<conio.h>
-void main()
-{
- int x,y,i,r=1,t;
- printf("Enter a number:");
- scanf("%d",&x);
- printf("Enter the power:");
- scanf("%d",&y);
- for(i=1;i<=y;i++)
- {
-  t=x;
-  r=r*t;
- }
- printf("Result:%d",r);
- getch();
+// convert a given character into uppercase & vice versa. 
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+   char s[100];
+   int i;
+   printf("\nEnter a string : ");
+   gets(s);
+
+   for (i = 0; s[i]!='\0'; i++) {
+      if(s[i] >= 'a' && s[i] <= 'z') {
+         s[i] = s[i] - 32;
+      }
+   }
+   printf("\nString in Upper Case = %s", s);
+   return 0;
 }
