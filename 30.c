@@ -1,12 +1,17 @@
-#include <stdio.h>
-int main() {  
-    char c;
-    printf("Enter a character: ");
-    scanf("%c", &c);  
-    
-    // %d displays the integer value of a character
-    // %c displays the actual character
-    printf("ASCII value of %c = %d", c, c);
-    
-    return 0;
-}
+//program to accept one number and to calculate sum of digits
+
+#include<stdio.h>  
+ int main()    
+{    
+int n,sum=0,m;    
+printf("Enter a number:");    
+scanf("%d",&n);    
+while(n>0)    
+{    
+m=n%10;    
+sum=sum+m;    
+n=n/10;    
+}    
+printf("Sum is=%d",sum);    
+return 0;  
+}   
