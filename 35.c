@@ -1,31 +1,28 @@
-/**
- * C program to find reverse of a number
- */
+// prime number Or not
 
 #include <stdio.h>
+int main() {
+  int n, i, flag = 0;
+  printf("Enter a positive integer: ");
+  scanf("%d", &n);
 
-int main()
-{
-    int num, reverse = 0;
-
-    /* Input a number from user */
-    printf("Enter any number to find reverse: ");
-    scanf("%d", &num);
-
-    /* Repeat the till 'num' becomes 0 */
-    while(num != 0)
-    {
-        /* 
-         * Increase place value of reverse and 
-         * add last digit to reverse 
-         */
-        reverse = (reverse * 10) + (num % 10);
-
-        /* Remove last digit from 'num' */
-        num /= 10;
+  for (i = 2; i <= n / 2; ++i) {
+    // condition for non-prime
+    if (n % i == 0) {
+      flag = 1;
+      break;
     }
+  }
 
-    printf("Reverse = %d", reverse);
+  if (n == 1) {
+    printf("1 is neither prime nor composite.");
+  } 
+  else {
+    if (flag == 0)
+      printf("%d is a prime number.", n);
+    else
+      printf("%d is not a prime number.", n);
+  }
 
-    return 0;
+  return 0;
 }
