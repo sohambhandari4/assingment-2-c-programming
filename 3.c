@@ -1,3 +1,5 @@
+// convert temperature from degree centigrade to Fahrenheit. 
+
 #include <stdio.h>
 int main()
 {
