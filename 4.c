@@ -1,3 +1,5 @@
+//calculate sum of 5 subjects and find percentage
+
 #include<stdio.h>
  
 int main() {
