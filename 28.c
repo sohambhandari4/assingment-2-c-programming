@@ -1,22 +1,21 @@
-// vowel or consonant
+// factorial
 
 #include <stdio.h>
 int main() {
-    char c;
-    int lowercase_vowel, uppercase_vowel;
-    printf("Enter an alphabet: ");
-    scanf("%c", &c);
+    int n, i;
+    unsigned long long fact = 1;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
 
-    // evaluates to 1 if variable c is a lowercase vowel
-    lowercase_vowel = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
+    // shows error if the user enters a negative integer
+    if (n < 0)
+        printf("Error! Factorial of a negative number doesn't exist.");
+    else {
+        for (i = 1; i <= n; ++i) {
+            fact *= i;
+        }
+        printf("Factorial of %d = %llu", n, fact);
+    }
 
-    // evaluates to 1 if variable c is a uppercase vowel
-    uppercase_vowel = (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
-
-    // evaluates to 1 (true) if c is a vowel
-    if (lowercase_vowel || uppercase_vowel)
-        printf("%c is a vowel.", c);
-    else
-        printf("%c is a consonant.", c);
     return 0;
 }
