@@ -1,6 +1,6 @@
 
 //program that takes a number as input from user and checks whether the number is even 
-or odd using conditional operator. 
+//or odd using conditional operator. 
 
 #include <stdio.h>
 int main() {
