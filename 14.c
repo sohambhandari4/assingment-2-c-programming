@@ -1,3 +1,5 @@
+//student age and check whether given student can vote or not
+
 #include<stdio.h>
 
 int main()
