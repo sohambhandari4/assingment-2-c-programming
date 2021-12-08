@@ -1,6 +1,5 @@
-/**
- * C program to check divisibility of any number
- */
+//C program to check divisibility of 5 and 7
+
 
 #include <stdio.h>
 
