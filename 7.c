@@ -1,5 +1,5 @@
 /**
- * C program to find maximum between three numbers using ladder if else
+ * C program to find maximum between three numbers 
  */
 
 #include <stdio.h>
