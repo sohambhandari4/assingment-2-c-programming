@@ -1,33 +1,31 @@
-/* C Program to count Alphabets Digits and Special Characters in a String */
- 
+/**
+ * C program to check divisibility of any number
+ */
+
 #include <stdio.h>
- 
+
 int main()
 {
-  	char str[100];
-  	int i, alphabets, digits, special;
-  	i = alphabets = digits = special = 0;
- 
-  	printf("\n Please Enter any String  :  ");
-  	gets(str);
-  	
-  	while (str[i] != '\0')
-  	{
-  		if( (str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z') )
-  		{
-  			alphabets++;  	
- 		}
-  		else if (str[i] >= '0' && str[i] <= '9')
-  		{
-  			digits++;  	
-  		}    
-  		else
-    		special++;
-    	i++;
-	}
-    printf("\n Number of Alphabets in this String = %d", alphabets);  
-	printf("\n Number of Digits in this String = %d", digits);  
-	printf("\n Number of Special Characters in this String = %d", special);  	
-  
-  	return 0;
+    int num;
+
+    /* Input number from user */
+    printf("Enter any number: ");
+    scanf("%d", &num);
+
+
+    /*
+     * If  num modulo division 5 is 0 
+     * and num modulo division 7 is 0 then
+     * the number is divisible by 5 and 7 both
+     */
+    if((num % 5 == 0) && (num % 7 == 0))
+    {
+        printf("Number is divisible by 5 and 7");
+    }
+    else
+    {
+        printf("Number is not divisible by 5 and 7");
+    }
+
+    return 0;
 }
