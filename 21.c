@@ -1,3 +1,5 @@
+//program to print the number pattern. 
+
 #include <stdio.h>
 int main() {
    int i, j, rows;
