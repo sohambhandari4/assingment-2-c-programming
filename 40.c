@@ -1,49 +1,56 @@
-#include <stdio.h>
+// C program to find LCM of two numbers 
+#include <stdio.h> 
+ 
+// Recursive function to return gcd of a and b 
 
+int gcd(int a, int b) 
+{ 
+
+    if (a == 0)
+
+        return b; 
+
+    return gcd(b % a, a); 
+} 
+ 
+// Function to return LCM of two numbers 
+
+int lcm(int a, int b) 
+{ 
+
+    return (a / gcd(a, b)) * b;
+} 
+ 
+// Driver program to test above function 
+
+int main() 
+{ 
+
+    int a = 15, b = 20; 
+
+    printf("LCM of %d and %d is %d ", a, b, lcm(a, b)); 
+
+    return 0; 
+} 
+
+// GDC of two numbers 
+
+#include <stdio.h>
 int main()
 {
-    char ch;
+    int n1, n2, i, gcd;
 
-    /* Input an alphabet from user */
-    printf("Enter any alphabet: ");
-    scanf("%c", &ch);
+    printf("Enter two integers: ");
+    scanf("%d %d", &n1, &n2);
 
-    /* Switch value of ch */
-    switch(ch)
+    for(i=1; i <= n1 && i <= n2; ++i)
     {
-        case 'a': 
-            printf("Vowel");
-            break;
-        case 'e': 
-            printf("Vowel");
-            break;
-        case 'i': 
-            printf("Vowel");
-            break;
-        case 'o': 
-            printf("Vowel");
-            break;
-        case 'u': 
-            printf("Vowel");
-            break;
-        case 'A': 
-            printf("Vowel");
-            break;
-        case 'E': 
-            printf("Vowel");
-            break;
-        case 'I': 
-            printf("Vowel");
-            break;
-        case 'O': 
-            printf("Vowel");
-            break;
-        case 'U': 
-            printf("Vowel");
-            break;
-        default: 
-            printf("Consonant");
+        // Checks if i is factor of both integers
+        if(n1%i==0 && n2%i==0)
+            gcd = i;
     }
+
+    printf("G.C.D of %d and %d is %d", n1, n2, gcd);
 
     return 0;
 }
