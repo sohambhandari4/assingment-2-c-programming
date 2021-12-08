@@ -1,30 +1,50 @@
-/**
- * C program to check divisibility of any number
- */
+//Program to check whether a given character is a VOWEL or CONSONANT using switch￾case statement
 
 #include <stdio.h>
 
 int main()
 {
-    int num;
+    char ch;
 
-    /* Input number from user */
-    printf("Enter any number: ");
-    scanf("%d", &num);
+    /* Input an alphabet from user */
+    printf("Enter any alphabet: ");
+    scanf("%c", &ch);
 
-
-    /*
-     * If  num modulo division 5 is 0 
-     * and num modulo division 11 is 0 then
-     * the number is divisible by 5 and 11 both
-     */
-    if((num % 5 == 0) && (num % 11 == 0))
+    /* Switch value of ch */
+    switch(ch)
     {
-        printf("Number is divisible by 5 and 11");
-    }
-    else
-    {
-        printf("Number is not divisible by 5 and 11");
+        case 'a': 
+            printf("Vowel");
+            break;
+        case 'e': 
+            printf("Vowel");
+            break;
+        case 'i': 
+            printf("Vowel");
+            break;
+        case 'o': 
+            printf("Vowel");
+            break;
+        case 'u': 
+            printf("Vowel");
+            break;
+        case 'A': 
+            printf("Vowel");
+            break;
+        case 'E': 
+            printf("Vowel");
+            break;
+        case 'I': 
+            printf("Vowel");
+            break;
+        case 'O': 
+            printf("Vowel");
+            break;
+        case 'U': 
+            printf("Vowel");
+            break;
+        default: 
+            printf("Consonant");
     }
 
     return 0;
