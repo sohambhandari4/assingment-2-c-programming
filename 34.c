@@ -1,13 +1,30 @@
+// C program to find reverse of a number
+
+
 #include <stdio.h>
-int main() {
-   int i, j, rows;
-   printf("Enter the number of rows: ");
-   scanf("%d", &rows);
-   for (i = rows; i >= 1; --i) {
-      for (j = 1; j <= i; ++j) {
-         printf("* ");
-      }
-      printf("\n");
-   }
-   return 0;
+
+int main()
+{
+    int num, reverse = 0;
+
+    /* Input a number from user */
+    printf("Enter any number to find reverse: ");
+    scanf("%d", &num);
+
+    /* Repeat the till 'num' becomes 0 */
+    while(num != 0)
+    {
+        /* 
+         * Increase place value of reverse and 
+         * add last digit to reverse 
+         */
+        reverse = (reverse * 10) + (num % 10);
+
+        /* Remove last digit from 'num' */
+        num /= 10;
+    }
+
+    printf("Reverse = %d", reverse);
+
+    return 0;
 }
