@@ -32,24 +32,6 @@ int main()
                 printf("\nFactorial of %d is %d. \n\n",n, res);
                 break;
 
-            //For prime block
-            case 2:
-
-                //functionality of Prime or not
-
-                printf("Enter an integer: ");
-                scanf("%d", &num);
-                n=num;
-
-                for(i=2;i<=n/2;i++)
-                {
-                    if(num%i==0)
-                    {
-                        flag=1;
-                        break;
-                    }
-                }
-
                 //for number "1" it's neither prime nor composite
                 if(num==1)
                     printf("\n1 is neither prime nor composite");
