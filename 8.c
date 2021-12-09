@@ -1,4 +1,4 @@
-// C++ Program to swap two numbers  without
+// C Program to swap two numbers  without
 // using temporary variable
 
 #include<stdio.h>  
